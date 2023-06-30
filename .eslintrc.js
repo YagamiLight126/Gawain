@@ -21,6 +21,7 @@ module.exports = {
     "alloy/typescript",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:storybook/recommended",
   ],
   settings: {
     react: {
@@ -33,7 +34,12 @@ module.exports = {
     "no-console": "error",
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/no-require-imports": 0,
-    "no-unused-expressions": [0, { allowShortCircuit: true }],
+    "no-unused-expressions": [
+      0,
+      {
+        allowShortCircuit: true,
+      },
+    ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
   },
 };

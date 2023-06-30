@@ -1,5 +1,4 @@
 const path = require("path");
-
 module.exports = {
   stories: [
     "../examples/**/README.stories.mdx",
@@ -12,6 +11,7 @@ module.exports = {
         controls: false,
       },
     },
+    "@storybook/addon-mdx-gfm",
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
@@ -27,5 +27,12 @@ module.exports = {
 
     // Return the altered config
     return config;
+  },
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  docs: {
+    autodocs: true,
   },
 };
