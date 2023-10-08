@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import * as React from "react";
+import type * as React from "react";
 
 interface OptionCoreData {
   key?: string | number;

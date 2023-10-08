@@ -2,7 +2,8 @@
 import React from "react";
 
 import "../assets/index.less";
-import AutoComplete, { OptionData } from "../src";
+import type { OptionData } from "../src";
+import AutoComplete from "../src";
 
 export default {
   title: "AutoComplete",

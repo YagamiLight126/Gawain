@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { action } from "@storybook/addon-actions";
 
-import AutoComplete, { OptionData } from "../src";
+import type { OptionData } from "../src";
+import AutoComplete from "../src";
 
 export default {
   title: "AutoComplete",

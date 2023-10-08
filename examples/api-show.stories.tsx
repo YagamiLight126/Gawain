@@ -30,7 +30,7 @@ export function APIShow() {
             mockVal(searchText, 3),
             mockVal(searchText, 4),
             mockVal(searchText, 5),
-          ]
+          ],
     );
   };
 

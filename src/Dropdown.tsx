@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
 
-import { OptionData, OptionsType } from "./Option";
+import type { OptionData, OptionsType } from "./Option";
 
 export interface DropdownProps {
   defaultActiveFirstOption?: boolean;
@@ -34,7 +34,7 @@ export default function Dropdown(props: DropdownProps) {
   const onClickOption = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>,
     value: string | number,
-    option: OptionData
+    option: OptionData,
   ) => {
     e.preventDefault();
     onSelect(value, option);
@@ -91,7 +91,7 @@ export default function Dropdown(props: DropdownProps) {
 
   const _dropdownClassName = classNames(
     "f-dropdown-wrapper",
-    dropdownClassName
+    dropdownClassName,
   );
 
   const needRender =
